@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.618;
+    background-color: #e5989b;
     -webkit-text-size-adjust: 100%;
+}
+
+nav {
+
+}
+
+main {
+    min-height: 100vh;
 }
