@@ -8,15 +8,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.618;
-    background-color: #e5989b;
     -webkit-text-size-adjust: 100%;
 }
 
 h1 {
-    font-family: 'Dynapuff', sans-serif;
     font-size: 4rem;
 }
 
 main {
     position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
 }
