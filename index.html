@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="app.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KOA Interactive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="view">
-        <header class="page-header">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <img src="./koa-logo-150x75.svg" width="150" alt="KOA Interactive LLC logo">
-        </header>
-        <main role="main">
-            <h1>KOA Interactive</h1>
-        </main>
-        <footer class="page-footer">
-            <span>©2022 KOA Interactive LLC</span>
-            <a href="./privacy">Privacy policy</a>
-        </footer>
-    </div>
+    <nav role="navigation" class="nav">
+        <a href="/">
+            <img src="/koa-logo.svg" width="150" alt="KOA Interative logo" />
+        </a>
+        <div class="button-group">
+            <a href="#apps" class="button">Apps</a>
+            <a href="#about" class="button">About</a>
+            <a href="#contact" class="button">Contact</a>
+        </div>
+    </nav>
+    <main role="main" class="viewport">
+        <section id="apps" class="section layout fullscreen">
+            <div class="column vstack col-1">
+                <header class="header">
+                    <h1 class="heading primary">Apps for children on the spectrum.</h1>
+                    <p>It's our passion to ensure every child has an equal opportunity to enjoy games.</p>
+                </header>
+            </div>
+            <div class="column col-2">
+                <div class="apps">
+                    <figure class="app shapes">
+                        <h3 class="heading secondary">
+                            <a href="#">Stimmy Shapes</a>
+                        </h3>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section layout fullscreen">
+            <div class="column col-3">
+                <div class="image-grid">
+                    <figure class="image icon-1"></figure>
+                    <figure class="image icon-2"></figure>
+                    <figure class="image icon-3"></figure>
+                    <figure class="image icon-4"></figure>
+                    <figure class="image icon-5"></figure>
+                    <figure class="image icon-6"></figure>
+                </div>
+            </div>
+            <div class="column vstack col-4">
+                <header class="header">
+                    <h1 class="heading primary">Our driving force</h1>
+                    <p>** reasons why we do what we do **</p>
+                </header>
+            </div>
+        </section>
+
+        <section id="contact" class="section layout">
+            <div class="column vstack col-5">
+                <h2 class="heading primary">Contact us</h2>
+                <p>We are always looking for ways to improve our products and meet your child's needs. Please feel encouraged to reach out to us at any time.</p>
+                <a href="mailto:info@@koainteractive.com" class="button md">info@@koainteractive.com</a>
+            </div>
+            <div class="column vstack col-6">
+                <h2 class="heading primary">Social</h2>
+                <div class="spacer"></div>
+                <div class="social">
+                    <a href="#" class="button md">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="/privacy">Privacy policy</a>
+    </footer>
 </body>
 </html>
