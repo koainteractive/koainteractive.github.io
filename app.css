@@ -224,7 +224,7 @@ p {
         }
 
         .apps .app.shapes {
-            background: url(/img/preview01.jpg) no-repeat center center;
+            background: url(./preview01.jpg) no-repeat center center;
             background-size: cover;
         }
 
