@@ -6,56 +6,61 @@
     <title>KOA Interactive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./app.css" asp-append-version="true" />
 </head>
 <body>
-    <nav role="navigation" class="nav">
-        <a href="/">
-            <img src="./koa-logo-150x75.svg" width="150" alt="KOA Interative logo" />
-        </a>
-        <div class="button-group">
-            <a href="#apps" class="button">Apps</a>
-            <a href="#about" class="button">About</a>
-            <a href="#contact" class="button">Contact</a>
-        </div>
-    </nav>
     <main role="main" class="viewport">
-        <section id="apps" class="section layout fullscreen">
-            <div class="column vstack col-1">
-                <header class="header">
-                    <h1 class="heading primary">Apps for children on the spectrum.</h1>
-                    <p>It's our passion to ensure every child has an equal opportunity to enjoy games.</p>
-                </header>
+        <header class="page-header flex-between">
+            <a href="/">
+                <img src="./koa-logo-150x75.svg" width="150" alt="KOA Interative logo" />
+            </a>
+            <nav role="navigation" class="nav flex-between">
+                <a href="/support/" class="link">Support</a>   
+            </nav>
+        </header>
+        <section class="section">
+            <h1 class="heading primary home-heading">Entertainment for children on the spectrum</h1>
+            <div class="home-intro">
+                <p>Our mission is to provide apps, games, and multimedia entertainment to people - especially children - with sensory disorders. Navigating through traditional apps and games can be difficult and overwhelming to those on the spectrum. We aim to remove the obstacles which cause frustration, and provide stimulating, satisfying, and engaging experiences. </p>
             </div>
-            <div class="column clean col-2">
-                <div class="apps">
-                    <figure class="app shapes">
-                        <h3 class="heading secondary">
-                            <a href="#">Stimmy Shapes</a>
-                        </h3>
-                    </figure>
+            <div class="home-banner"></div>
+        </section>
+        <section class="section">
+            <header class="header">
+                <h1 class="heading secondary">Apps</h1>
+            </header>
+            <div class="apps">
+                <div class="app stimmy-shapes">
+                    <a href="#">
+                        <div class="spacer"></div>
+                        <div class="app-details text-white shadow">
+                            <header>
+                                <h3 class="heading tertiary title">Stimmy Shapes</h3>
+                                <p class="subtitle">Fun, shape-shifting play.</p>
+                            </header>
+                        </div>
+                    </a>
+                </div>
+                <div class="app stimmy-force">
+                    <a href="#">
+                        <div class="spacer"></div>
+                        <div class="app-details text-black">
+                            <header>
+                                <h3 class="heading tertiary title">Stimmy Force</h3>
+                                <p class="subtitle">Coming soon!</p>
+                            </header>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="section layout">
-            <div class="column vstack col-5">
-                <h2 class="heading primary">Contact us</h2>
-                <p>We are always looking for ways to improve our products and meet your child's needs. Please feel encouraged to reach out to us at any time.</p>
-                <a href="mailto:info@koainteractive.com" class="button md">info@koainteractive.com</a>
+        <footer class="page-footer">
+            <div class="flex-between">
+                <span>@2022 KOA Interactive, LLC</span>
+                <a href="/privacy/" class="link">Privacy policy</a>
             </div>
-            <div class="column vstack col-6">
-                <h2 class="heading primary">Social</h2>
-                <div class="spacer"></div>
-                <div class="social">
-                    <a href="#" class="button md">Instagram</a>
-                </div>
-            </div>
-        </section>
+        </footer>
     </main>
-    <footer class="footer">
-        <a href="/privacy">Privacy policy</a>
-    </footer>
 </body>
 </html>
