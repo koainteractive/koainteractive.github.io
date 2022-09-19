@@ -59,9 +59,12 @@ p {
 }
 
     a:not(.link),
-    a:visited,
     .link:hover {
         color: #06c;
+    }
+
+    .link:visited {
+        color: black;
     }
 
 .viewport {
