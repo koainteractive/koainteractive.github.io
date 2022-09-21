@@ -24,7 +24,7 @@ aside, article, main, audio, section, figure, figcaption, p, ul, ol, dl, h1, h2,
 }
 
 .heading {
-    margin-bottom: 1.5625em;
+    margin-bottom: 4rem;
     letter-spacing: -0.075rem;
     line-height: 1;
     font-weight: 800;
@@ -95,18 +95,46 @@ p {
     padding-top: 4rem;
 }
 
-.home-heading {
+.home {
+    text-align: center;
+}
+
+.home .heading {
     width: 768px;
     max-width: 100%;
+    background: linear-gradient(70deg, #2893d0, #aa76ff, #df3d3d);
+    animation: animateHeadingText 15s ease infinite;
+    background-clip: text;
+    background-size: 150% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: clamp(2.5rem, 4vw, 5rem);
 }
 
-.home-intro {
+@keyframes animateHeadingText {
+    0% { 
+        background-position: 0% 100%;
+    }
+    50% { 
+        background-position: 100% 100%;
+    }
+    100% { 
+        background-position: 0% 50%;
+    }
+}
+
+.home .intro {
     width: 600px;
     max-width: 100%;
 }
 
-.home-banner {
+.home .heading, 
+.home .intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home .banner {
     min-height: 560px;
     margin-top: 4rem;
     background-color: #f0f0f0;
@@ -114,7 +142,7 @@ p {
     overflow: hidden;
 }
 
-.home-banner img {
+.home .banner img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -154,6 +182,7 @@ p {
     margin-bottom: .5625rem;
     padding-bottom: 1rem;
 }
+
 
 .app-details p {
     font-weight: 600;
