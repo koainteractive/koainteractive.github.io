@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOA Interactive</title>
+    <title>KOA Interactive - Support</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -11,15 +11,16 @@
 </head>
 <body>
     <main role="main" class="viewport">
-        <header class="page-header flex-between">
+        <header class="page-header group">
             <a href="/">
                 <img src="../koa-logo-150x75.svg" width="150" alt="KOA Interative logo" />
             </a>
-            <nav role="navigation" class="nav flex-between">
-                <a href="/support/" class="link">Support</a>   
+            <nav role="navigation" class="nav group">
+                <a href="/apps" class="link">Apps</a>   
+                <a href="/about/" class="link">About</a>   
             </nav>
         </header>
-        <section class="section">
+        <section class="section banner">
             <h1 class="heading primary">Support</h1>
             <div class="home-grid">
                 <div class="intro">
@@ -31,9 +32,12 @@
             </div>
         </section>
         <footer class="page-footer">
-            <div class="flex-between">
+            <div class="group">
                 <span>@2022 KOA Interactive, LLC</span>
-                <a href="/privacy" class="link">Privacy policy</a>
+                <div class="group">
+                    <a href="/support/" class="link">Support</a>
+                    <a href="/privacy/" class="link">Privacy policy</a>
+                </div>
             </div>
         </footer>
     </main>
