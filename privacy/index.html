@@ -11,12 +11,13 @@
 </head>
 <body>
     <main role="main" class="viewport">
-        <header class="page-header flex-between">
+        <header class="page-header group">
             <a href="/">
                 <img src="../koa-logo-150x75.svg" width="150" alt="KOA Interative logo" />
             </a>
-            <nav role="navigation" class="nav flex-between">
-                <a href="/support/" class="link">Support</a>   
+            <nav role="navigation" class="nav group">
+                <a href="/#apps" class="link">Apps</a>   
+                <a href="/about/" class="link">About</a>   
             </nav>
         </header>
         <section class="section banner">
@@ -81,9 +82,12 @@
             <p>If you have any questions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:info@koainteractive.com">info@koainteractive.com</a>.</p>
         </section>
         <footer class="page-footer">
-            <div class="flex-between">
+            <div class="group">
                 <span>@2022 KOA Interactive, LLC</span>
-                <a href="/privacy" class="link">Privacy policy</a>
+                <div class="group">
+                    <a href="/support" class="link">Support</a>
+                    <a href="/privacy" class="link">Privacy policy</a>
+                </div>
             </div>
         </footer>
     </main>
