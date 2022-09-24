@@ -23,7 +23,7 @@ aside, article, main, audio, section, figure, figcaption, p, ul, ol, dl, h1, h2,
 .heading {
     margin-bottom: 4rem;
     letter-spacing: -0.075rem;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 800;
 }
 
